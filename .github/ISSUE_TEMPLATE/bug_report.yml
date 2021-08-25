@@ -1,0 +1,43 @@
+name: 🐛 Bug report
+description: Create a bug report to help us improve E-Ther-Inc
+title: "Bug: "
+labels: [bug]
+assignees:
+  - 0-vortex
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: dropdown
+    attributes:
+      multiple: true
+      label: Browsers
+      description: Select the browsers where the issue can be reproduced (that you know of).
+      options:
+        - "Chrome"
+        - "Firefox"
+        - "Safari"
+        - "Edge"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Current behavior
+      description: Describe the behavior you're experiencing. Be as descriptive as possible (attach exact requests, error messages, logs, etc.).
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: Describe what you think should happen instead.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
